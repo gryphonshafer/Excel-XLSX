@@ -4,7 +4,7 @@ Excel::XLSX - Read and write Excel XLSX data
 
 # VERSION
 
-version 1.01
+version 1.02
 
 [![test](https://github.com/gryphonshafer/Excel-XLSX/workflows/test/badge.svg)](https://github.com/gryphonshafer/Excel-XLSX/actions?query=workflow%3Atest)
 [![codecov](https://codecov.io/gh/gryphonshafer/Excel-XLSX/graph/badge.svg)](https://codecov.io/gh/gryphonshafer/Excel-XLSX)

@@ -12,10 +12,10 @@ my %WriteMakefileArgs = (
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0
   },
-  "DISTNAME" => "Excel-XSLX",
+  "DISTNAME" => "Excel-XLSX",
   "LICENSE" => "artistic_2",
   "MIN_PERL_VERSION" => "5.014",
-  "NAME" => "Excel::XSLX",
+  "NAME" => "Excel::XLSX",
   "PREREQ_PM" => {
     "Excel::Writer::XLSX" => 0,
     "Exporter" => 0,
@@ -33,7 +33,7 @@ my %WriteMakefileArgs = (
     "Test2::V0" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "1.01",
+  "VERSION" => "1.02",
   "test" => {
     "TESTS" => "t/*.t"
   }
