@@ -2,25 +2,28 @@
 use strict;
 use warnings;
 
-use 5.010;
+use 5.014;
 
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Generate complete SQL from Perl data structures",
+  "ABSTRACT" => "Read and write Excel XLSX data",
   "AUTHOR" => "Gryphon Shafer <gryphon\@cpan.org>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0
   },
-  "DISTNAME" => "SQL-Abstract-Complete",
+  "DISTNAME" => "Excel-XSLX",
   "LICENSE" => "artistic_2",
-  "MIN_PERL_VERSION" => "5.010",
-  "NAME" => "SQL::Abstract::Complete",
+  "MIN_PERL_VERSION" => "5.014",
+  "NAME" => "Excel::XSLX",
   "PREREQ_PM" => {
-    "SQL::Abstract" => "1.5",
-    "Storable" => 0,
+    "Excel::Writer::XLSX" => 0,
+    "Exporter" => 0,
+    "PerlX::Maybe" => 0,
+    "Spreadsheet::ParseXLSX" => 0,
+    "YAML::XS" => 0,
+    "base" => 0,
     "strict" => 0,
-    "vars" => 0,
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
@@ -30,7 +33,7 @@ my %WriteMakefileArgs = (
     "Test2::V0" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "1.10",
+  "VERSION" => "0.001",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -38,15 +41,18 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Excel::Writer::XLSX" => 0,
+  "Exporter" => 0,
   "File::Spec" => 0,
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
-  "SQL::Abstract" => "1.5",
-  "Storable" => 0,
+  "PerlX::Maybe" => 0,
+  "Spreadsheet::ParseXLSX" => 0,
   "Test2::V0" => 0,
   "Test::More" => 0,
+  "YAML::XS" => 0,
+  "base" => 0,
   "strict" => 0,
-  "vars" => 0,
   "warnings" => 0
 );
 
